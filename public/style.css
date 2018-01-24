@@ -1,0 +1,15 @@
+.room-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.room {
+  border-style: solid;
+  border-color: black;
+  text-align: center;
+  width: 100px;
+  height: 50px;
+}
+.title {
+  
+}
