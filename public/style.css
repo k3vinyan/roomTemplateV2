@@ -9,7 +9,17 @@
   text-align: center;
   width: 100px;
   height: 50px;
+  animation: createBox 1.5s;
 }
 .title {
-  
+
+}
+
+@keyframes createBox {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }

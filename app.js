@@ -21,13 +21,15 @@ class Layout extends React.Component {
     let _this = this;
 
     return(
-      <div className="room-container">
+      <div>
+        <div className="room-container">
+        <button onClick={this.addRoom}>Add Room</button>
         {
           _this.state.rooms.map(function(text, i){
             return(<Room key={i} title={_this.state.rooms[i]}/>)
           })
         }
-        <button onClick={this.addRoom}>button</button>
+        </div>
       </div>
     )
   }

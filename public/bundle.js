@@ -990,14 +990,18 @@ var Layout = function (_React$Component) {
 
       return _react2.default.createElement(
         'div',
-        { className: 'room-container' },
-        _this.state.rooms.map(function (text, i) {
-          return _react2.default.createElement(_Room2.default, { key: i, title: _this.state.rooms[i] });
-        }),
+        null,
         _react2.default.createElement(
-          'button',
-          { onClick: this.addRoom },
-          'button'
+          'div',
+          { className: 'room-container' },
+          _react2.default.createElement(
+            'button',
+            { onClick: this.addRoom },
+            'Add Room'
+          ),
+          _this.state.rooms.map(function (text, i) {
+            return _react2.default.createElement(_Room2.default, { key: i, title: _this.state.rooms[i] });
+          })
         )
       );
     }
